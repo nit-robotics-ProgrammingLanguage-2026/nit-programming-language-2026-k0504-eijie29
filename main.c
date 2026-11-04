@@ -1,15 +1,29 @@
 #include <stdio.h>
+
 int main(void)
 {
-    int input;
-    scanf("%d",&input)条件;
-    int f=!(input<0||(input>=10&&a<12)||input>=15);
-    if(f==1)もし
-   {
+int input;
+
+```
+// 整数を入力する
+scanf("%d", &input);
+
+// 0～9または12～14ならOKと判定する
+int isValid = !(input < 0 ||
+                (input >= 10 && input < 12) ||
+                input >= 15);
+
+// 判定結果を表示する
+if (isValid == 1)
+{
     printf("OK");
-    }
-    else
-    {
-        printf("NG");
-    }return 0;
+}
+else
+{
+    printf("NG");
+}
+
+return 0;
+```
+
 }
