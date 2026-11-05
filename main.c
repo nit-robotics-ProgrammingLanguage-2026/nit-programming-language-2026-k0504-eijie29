@@ -3,12 +3,10 @@
 int main(void)
 {
 int input;
-
-```
 // 整数を入力する
 scanf("%d", &input);
 
-// 0～9または12～14ならOKと判定する
+// 条件に当てはまる場合はOKと判定する
 int isValid = !(input < 0 ||
                 (input >= 10 && input < 12) ||
                 input >= 15);
@@ -24,6 +22,4 @@ else
 }
 
 return 0;
-```
-
 }
